@@ -170,6 +170,7 @@ PagedAttention + Continuous Batching + Tensor Parallelism，QPS 从 20 提升到
 | **llm-action** | [liguodongiot/llm-action](https://github.com/liguodongiot/llm-action) | 大模型训练/推理/压缩实战代码 |
 | **llm-action-notes** | [liguodongiot/llm-action](https://github.com/liguodongiot/llm-action) | 大模型训练/推理/压缩/评测实战教程笔记 |
 | **ai-agents-from-zero** | [didilili/ai-agents-from-zero](https://github.com/didilili/ai-agents-from-zero) | AI智能体开发教程和实战代码 |
+| **RAG-Anything** | [HKUDS/RAG-Anything](https://github.com/HKUDS/RAG-Anything) | 多模态文档处理RAG框架 |
 | **TRAINING_GUIDE.md** | 本项目 | 大模型训练方法、代码和硬件要求指南 |
 
 #### Chinese-LLaMA-Alpaca-3 核心功能
@@ -195,6 +196,17 @@ cat README.md
 # 查看llm-action项目
 cd llm_projects/llm-action
 cat README.md
+
+# 查看ai-agents-from-zero项目
+cd llm_projects/ai-agents-from-zero
+cat README.md
+
+# 查看RAG-Anything项目
+cd llm_projects/RAG-Anything
+cat README.md
+
+# 查看训练指南
+cat llm_projects/TRAINING_GUIDE.md
 ```
 
 ---

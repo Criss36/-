@@ -1,4 +1,4 @@
-# 🤖 My LLM Career Portfolio
+# 🤖 My LLM works
 
 > 你好！我是一名专注于 **LLM 应用开发** 的工程师。这个仓库展示了我在中文大模型（RAG 系统、多 Agent 架构、模型微调、推理优化）领域的实战项目。
 >
@@ -9,7 +9,7 @@
 ## 🎯 关于我
 
 - 🔭 专注于中文 LLM 应用、RAG 系统、多 Agent 协作、模型微调与推理优化
-- 🏗️ 交付过 10+ 生产级 AI 项目，覆盖 10,000+ 用户
+- 🏗️ 交付过 10+ 生产级 AI 项目
 - 📖 持续沉淀 LLM 工程方法论
 - 🧠 对标 [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)，深入研究中文大模型生态
 - 💼 熟悉 ChatGLM、Qwen、Yi、DeepSeek 等主流中文底座模型
@@ -161,9 +161,7 @@ PagedAttention + Continuous Batching + Tensor Parallelism，QPS 从 20 提升到
 ## 👋 联系我
 
 - **GitHub**: [Criss36](https://github.com/Criss36)
-- **邮箱**: 请通过 GitHub Issue 联系
+- **邮箱**: 1773077198@qq.com
 - **求职状态**: 🔍 开放 LLM 应用开发 / AI 工程相关机会
 
 ---
-
-> 💡 这个项目参考 [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) 整理中文 LLM 模型生态，遵循其 MIT License。

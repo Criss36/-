@@ -1,0 +1,22 @@
+# RAGAnything依赖
+# 核心依赖
+huggingface_hub
+
+# LightRAG包
+lightrag-hku
+
+# MinerU 2.0包 (用于PDF解析)
+mineru[core]
+
+# 进度条
+tqdm
+
+# 可选依赖
+# Pillow>=10.0.0 (用于BMP, TIFF, GIF, WebP格式转换)
+# reportlab>=4.0.0 (用于TXT, MD转PDF)
+# paddleocr (用于parser='paddleocr')
+#
+# 安装可选依赖:
+# pip install raganything[image,text]
+# pip install raganything[all]
+# pip install raganything[paddleocr]

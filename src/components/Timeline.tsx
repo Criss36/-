@@ -4,6 +4,22 @@ import { useInView } from './hooks/useInView';
 interface TimelineItem { period: string; event: string }
 interface Props { list: TimelineItem[] }
 
+const TimelineEvent = memo<{ item: TimelineItem; index: number }>(({ item, index }) => {
+  const { ref, v } = useInView();
+  return (
+    <div
+      ref={ref as React.RefObject<HTMLDivElement>}
+      className="flex gap-10 py-6 border-b border-[var(--border)] last:border-0"
+      style={{ opacity: v ? 1 : 0, transition: `opacity 0.5s ease ${index * 80}ms` }}
+    >
+      <div className="shrink-0 w-28">
+        <span className="text-xs text-[var(--cyan)]" style={{ fontFamily: 'var(--font-mono)', letterSpacing: '0.05em' }}>{item.period}</span>
+      </div>
+      <p className="text-sm text-[var(--text-2)] leading-relaxed">{item.event}</p>
+    </div>
+  );
+});
+
 const Timeline = memo<Props>(({ list }) => (
   <section id="journey" className="py-28 px-6 bg-[var(--deep)]" aria-labelledby="journey-heading">
     <div className="max-w-6xl mx-auto">
@@ -12,22 +28,9 @@ const Timeline = memo<Props>(({ list }) => (
         经历
       </h2>
       <div className="max-w-2xl">
-        {list.map((item, i) => {
-          const { ref, v } = useInView();
-          return (
-            <div
-              key={i}
-              ref={ref as React.RefObject<HTMLDivElement>}
-              className="flex gap-10 py-6 border-b border-[var(--border)] last:border-0"
-              style={{ opacity: v ? 1 : 0, transition: `opacity 0.5s ease ${i * 80}ms` }}
-            >
-              <div className="shrink-0 w-28">
-                <span className="text-xs text-[var(--cyan)]" style={{ fontFamily: 'var(--font-mono)', letterSpacing: '0.05em' }}>{item.period}</span>
-              </div>
-              <p className="text-sm text-[var(--text-2)] leading-relaxed">{item.event}</p>
-            </div>
-          );
-        })}
+        {list.map((item, i) => (
+          <TimelineEvent key={i} item={item} index={i} />
+        ))}
       </div>
     </div>
   </section>
